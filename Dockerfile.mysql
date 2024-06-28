@@ -1,0 +1,11 @@
+# Utiliser l'image officielle de MySQL
+FROM mysql:latest
+
+# Définir les variables d'environnement
+ENV MYSQL_ROOT_PASSWORD=root_password
+
+# Exposer le port MySQL
+EXPOSE 3306
+
+# Commande de démarrage
+CMD ["mysqld"]
